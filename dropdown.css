@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 48px;
+}
+ nav ul{
+    list-style: none;
+    display: flex;
+
+}
+ nav li{
+    position: relative;
+}
+nav a{
+text-decoration: none;
+padding: 22px 10px;
+color: #fff;
+}
+ nav h1{
+    font-size: 36px;
+}
+.submenu{
+position: absolute;
+background-color: #ff0000;
+top: 39px;
+left: 0;
+flex-direction: column;
+display: none;
+}
+nav ul li:hover .submenu{
+display: flex;
+}
