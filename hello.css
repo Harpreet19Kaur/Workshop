@@ -1,56 +1,117 @@
-*{
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body{
-    background-color: rgb(13, 85, 145);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
+    background-color: #0077b6;
 }
-.container{
-    padding: 25px 20px 25px 20px;
-    background-color: rgba(135, 241, 201, 0.856);
-    width: 25%;
-    height: 440px;
-    margin:100px auto;
+
+.profile-card {
+    background-color: #caf0f8;
+    width: 300px;
     border-radius: 15px;
-    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-  
+    overflow: hidden;
 }
-.container img{
+
+.profile-header {
+    padding: 20px 0;
+    background-color: #ade8f4;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    border: 8px solid rgba(0, 255, 200, 0.808);
+    border: 5px solid #caf0f8;
 }
-h2{
-    padding: 5px 15px;
+
+.profile-body {
+    padding: 20px;
 }
-i{
-    padding: 25px 10px;
-    font-size: 23px;
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #023e8a;
 }
-h4{
-    padding:5px 8px 8px 5px;
+
+.profile-title {
+    font-size: 14px;
+    color: #0096c7;
+    margin-bottom: 20px;
 }
-.subscribe{
-    background-color: rgb(43, 180, 43);
-    margin-right: 8px;
-    padding: 8px;
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons .icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
     border-radius: 20px;
-    width: 45%;
-    color:white;
-   display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
 }
-.message{
-    background-color: rgb(43, 180, 43);
-    margin-left: 8px;
-    padding: 8px;
-    border-radius: 20px;
-    width: 45%;
-    color:white;
-    display: inline-block;
+
+.subscribe {
+    background-color: #38b000;
+}
+
+.message {
+    background-color: #0096c7;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: #023e8a;
+    padding: 10px 0;
+}
+
+.stats span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

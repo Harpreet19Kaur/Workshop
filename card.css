@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b3d8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Card Styles */
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Image Section */
+.card-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hover Content */
+.card-hover-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease;
+    text-align: center;
+}
+
+.card-image:hover .card-hover-content {
+    bottom: 0;
+}
+
+.sizes, .colors {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.sizes span {
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sizes .highlight {
+    background: #c7f5d1;
+    font-weight: bold;
+}
+
+.colors .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+}
+
+.colors .red { background: red; }
+.colors .green { background: green; }
+.colors .yellow { background: yellow; }
+.colors .purple { background: purple; }
+.colors .blue { background: blue; }
+
+/* Info Section */
+.card-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-info p {
+    margin: 5px 0;
+}
+
+.card-info .description {
+    font-size: 12px;
+    color: #777;
+}
